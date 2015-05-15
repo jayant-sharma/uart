@@ -1,0 +1,24 @@
+
+https://gitlab.com/eda-developers/test.git
+
+Git global setup
+
+git config --global user.name "Jayant Sharma"
+git config --global user.email "jayantsharma1@live.com"
+
+Create a new repository
+
+mkdir test
+cd test
+git init
+touch README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://gitlab.com/eda-developers/test.git
+git push -u origin master
+
+Push an existing Git repository
+
+cd existing_git_repo
+git remote add origin https://gitlab.com/eda-developers/test.git
+git push -u origin master
